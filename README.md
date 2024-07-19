@@ -138,13 +138,13 @@ Both of these formulas return the cell value if it's not empty; otherwise, they 
 
 After these changes sheet looked like this:
 
-![Customers Table](img\customers.png)
+![Customers Table](img/customers.png)
 
 ### Products Sheet
 The products sheet needed some adjustments as well. I wanted to see the full name of the coffee bean and the full name of the coffee roast instead of abbreviations. Also, Arabica, Excelsa, etc., are bean types, **not** coffee types, so I changed the naming of this column.  
 For this purpose I created a sheet `coffee names & roast types` in which I created tables for bean and roast type mapping.
 
-![Mapping Table](img\bean_roast_mapping_table.png)
+![Mapping Table](img/bean_roast_mapping_table.png)
 
 I used the `VLOOKUP()` function to populate the products sheet with the desired full names. For mapping the bean type, I used this formula:
 ```excel
@@ -160,7 +160,7 @@ At the end, I copied only the values from the newly created columns, pasted them
 
 After all the changes sheet looked like this:
 
-![Products Table](img\products.png)
+![Products Table](img/products.png)
 
 ### Orders Sheet
 A lot of a things needed to be done in this sheet. I started with creating following new columns:
@@ -238,7 +238,7 @@ This formula multiplies value of cell E2 with mapped cell D2 to coresponding val
 
 After all these steps sheet looked like this:
 
-![Orders Table](img\orders.png)
+![Orders Table](img/orders.png)
 
 As last step of cleaning I checked for duplictae records in dataset. Thankfully no duplictae values were found.
 
@@ -253,7 +253,7 @@ Distribution of customers among different countries:
 - **Ireland**: 15%
 - **UK**: 7%
 
-![Customers by Country](img\customers_by_country.png){width = 50%}
+![Customers by Country](img/customers_by_country.png){width = 50%}
 
 #### Email and Phone
 The majority of customers have provided the company with their email or phone numbers. Among all customers:
@@ -263,7 +263,7 @@ The majority of customers have provided the company with their email or phone nu
 #### Loyalty Card
 The company has a loyalty program that is not reaching its full potential. Only **51%** of all customers are loyalty card holders. Every single country has fewer customers **without** a loyalty card, with the exception of **Ireland**, where more customers have a loyalty card.
 
-![Customers by Loyalty Card](img\customers_by_loyalty_card.png){width = 50%}
+![Customers by Loyalty Card](img/customers_by_loyalty_card.png){width = 50%}
 
 #### Averages
 Customers are spending on average **$47.16** and are buying a coffee with average weight of **3.79 kg**. Average profit from orders is **$4.72**. Here's how average spending, profit and weight varies across countries:
@@ -277,7 +277,7 @@ Customers are spending on average **$47.16** and are buying a coffee with averag
 #### Bean Type
 Everybody has different taste, and this applies here as well. Some prefer Arabica, while others favor Excelsa. When it comes to the prefered bean type among customers, there is no clear winner. Arabica is preferred by **26%** of customers, just **1%** less than Excelsa and Liberica, and **2%** less than Robusta.
 
-![Bean Type](img\bean_type_overall.png){width = 50%}
+![Bean Type](img/bean_type_overall.png){width = 50%}
 
 That's overall customer preference but, what about preference in each country. Here things become more interesting. Let's look at the numbers:
 
@@ -291,7 +291,7 @@ That's overall customer preference but, what about preference in each country. H
 #### Roast Type
 Preferences for roast type are also diverse. Some customers prefer lightly roasted coffee, while others like it as dark as possible. The distribution of roast type preferences is almost evenly divided into thirds. More people prefer Medium roast (34%), while Light and Dark are preferred by 33% each.
 
-![Roast Type](img\roast_type_overall.png){width = 50%}
+![Roast Type](img/roast_type_overall.png){width = 50%}
 
 However, this data does not represent the preferences in each country accurately. Here are the actual preferences by country:
 
@@ -315,13 +315,13 @@ However, this data does not represent the preferences in each country accurately
 For every business, sales and revenue are crucial. How are each of the bean and roast types performing in these metrics?
 In terms of sales, the bestseller is Excelsa (27%), and the worst-selling is Robusta (20%). The best-selling roast type is Light (39%), and the worst-selling is Dark (29%). Looking at these numbers, bean types are more evenly distributed in terms of sales than roast types.  
 
-![Bean Type Sales](img\sales_by_bean_type_overall.png){width = 50%}
-![Roast Type Sales](img\sales_by_roast_type_overall.png){width = 50%}
+![Bean Type Sales](img/sales_by_bean_type_overall.png){width = 50%}
+![Roast Type Sales](img/sales_by_roast_type_overall.png){width = 50%}
 
 We know how much sales each bean and roast type generates, but what about the revenue? Among bean types, the most revenue is generated by Liberica (35%) and the least by Robusta (12%). The roast that generates the most revenue is Light (38%), and the one that generates the least is Dark (30%). Looking at the numbers, it's clear that even though sales by bean type are almost evenly distributed, the revenue is not.  
 
-![Bean Type Revenue](img\revenue_by_bean_type_overall.png){width = 50%}
-![Roast Type Revenue](img\revenue_by_roast_type_overall.png){width = 50%}
+![Bean Type Revenue](img/revenue_by_bean_type_overall.png){width = 50%}
+![Roast Type Revenue](img/revenue_by_roast_type_overall.png){width = 50%}
 
 **Insights:**
 - best selling bean type is Excelsa (27%)
