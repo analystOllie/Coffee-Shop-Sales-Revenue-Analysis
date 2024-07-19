@@ -1,7 +1,7 @@
 # Sipster's Hideout Customers & Sales Analysis
 
 ## Project Overview
-![Logo](img\shop_logo.png)
+![Logo](img/shop_logo.png)
 
 This project involves the analysis of sales, revenue and customer data for a made-up coffee shop named **Sipsters's Hideout**. The primary objective is to derive actionable insights from the available data to help the coffee shop improve its sales, marketing strategies, and customer satisfaction. By analyzing trends, patterns, and anomalies in the data, I aimed to provide recommendations to enhance business performance and growth.  
 
