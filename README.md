@@ -253,7 +253,7 @@ Distribution of customers among different countries:
 - **Ireland**: 15%
 - **UK**: 7%
 
-<img src="img/customers_by_country.png" alt="Customers by Country" width="50%">
+<img src="img/customers_by_country.png" alt="Customers by Country" width="75%">
 
 #### Email and Phone
 The majority of customers have provided the company with their email or phone numbers. Among all customers:
