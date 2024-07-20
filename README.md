@@ -19,6 +19,7 @@ This project involves the analysis of sales, revenue and customer data for a mad
    - 📦 [Products](#products)
    - 📜 [Orders History](#orders-history)
 - 💡 [Recommendations](#recommendations)
+- 🚨 [Challenges](#challenges)
 - 🙏 [Acknowledgement](#acknowledgement)
 - 🌐 [Used Sources](#used-sources)
 
@@ -249,19 +250,19 @@ In this section I'll cover customers analysis of Sipster's Hideout customers.
  
 #### Distribution
 Distribution of customers among different countries:
-- **USA**: 78%
-- **Ireland**: 15%
-- **UK**: 7%
+- **USA**: 78.20%
+- **Ireland**: 15.00%
+- **UK**: 6.80%
 
 <img src="img/customers_by_country.png" alt="Customers by Country" width="75%">
 
 #### Email and Phone
 The majority of customers have provided the company with their email or phone numbers. Among all customers:
-- **80%** have provided their email addresses.
-- **87%** have provided their phone numbers.
+- **79.60%** have provided their email addresses.
+- **87.00%** have provided their phone numbers.
 
 #### Loyalty Card
-The company has a loyalty program that is not reaching its full potential. Only **51%** of all customers are loyalty card holders. Every single country has fewer customers **without** a loyalty card, with the exception of **Ireland**, where more customers have a loyalty card.
+The company has a loyalty program that is not reaching its full potential. Only **51.30%** of all customers are loyalty card holders. Every single country has fewer customers **without** a loyalty card, with the exception of **Ireland**, where more customers have a loyalty card.
 
 <img src="img/customers_by_loyalty_card.png" alt="Customers by Loyalty Cardy" width="75%">
 
@@ -275,31 +276,31 @@ Customers are spending on average **$47.16** and are buying a coffee with averag
 | **Avg. profit** | $9.58  | $9.13        | $8.26  |
 
 #### Bean Type
-Everybody has different taste, and this applies here as well. Some prefer Arabica, while others favor Excelsa. When it comes to the prefered bean type among customers, there is no clear winner. Arabica is preferred by **26%** of customers, just **1%** less than Excelsa and Liberica, and **2%** less than Robusta.
+Everybody has different taste, and this applies here as well. Some prefer Arabica, while others favor Excelsa. When it comes to the prefered bean type among customers, there is no clear winner. Arabica is preferred by **26.40%** of customers, just **1.60%** less than Liberica, **1.70%** less than Excelsa and **2.30%** less than Robusta.
 
 <img src="img/bean_type_overall.png" alt="Bean Type" width="75%">
 
 That's overall customer preference but, what about preference in each country. Here things become more interesting. Let's look at the numbers:
 
-|               | **USA**| **Ireland**  | **UK** |
-|---------------|--------|--------------|--------|
-| **Arabica**   | **28%**| **27%**      | 10%    |
-| **Excelsa**   | 25%    | 23%          | **31%**|
-| **Liberica**  | 24%    | 25%          | 29%    |
-| **Robusta**   | 23%    | 25%          | 30%    |
+|               | **USA**   | **Ireland**     | **UK**    |
+|---------------|-----------|-----------------|-----------|
+| **Arabica**   | **27.91%**| **26.80%**      | 9.59%     |
+| **Excelsa**   | 24.42%    | 22.88%          | **31.51%**|
+| **Liberica**  | 24.29%    | 25.49%          | 28.77%    |
+| **Robusta**   | 23.39%    | 24.84%          | 30.14%    |
 
 #### Roast Type
-Preferences for roast type are also diverse. Some customers prefer lightly roasted coffee, while others like it as dark as possible. The distribution of roast type preferences is almost evenly divided into thirds. More people prefer Medium roast (34%), while Light and Dark are preferred by 33% each.
+Preferences for roast type are also diverse. Some customers prefer lightly roasted coffee, while others like it as dark as possible. The distribution of roast type preferences is almost evenly divided into thirds. More very little more people prefer Medium roast (33.40%), while Light and Dark are preferred by 33.30% each. It's clear that customers are evenly divided among all roast types.
 
 <img src="img/roast_type_overall.png" alt="Roast Type" width="75%">
 
 However, this data does not represent the preferences in each country accurately. Here are the actual preferences by country:
 
-|           | **USA**| **Ireland**  | **UK** |
-|-----------|--------|--------------|--------|
-| **Light** | 33%    | 31%          | 31%    |
-| **Medium**| **35%**| 26%          | **38%**|
-| **Dark**  | 32%    | **43%**      | 26%    |
+|           | **USA**    | **Ireland**     | **UK**     |
+|-----------|------------|-----------------|------------|
+| **Light** | 33.46.%    | 31.37%          | 35.62%     |
+| **Medium**| **34.50%** | 25.49%          | **38.36%** |
+| **Dark**  | 32.04%     | **43.14%**      | 26.03%     |
 
 **Insights:**
 - missing data on customer age, gender, and bean/roast preference
@@ -307,27 +308,27 @@ However, this data does not represent the preferences in each country accurately
 - majority of customers from **USA**
 - high percentage of customers have provided email and phone numbers
 - low number of loyalty card holders
-- even bean preference, except for the UK, which prefers Excelsa (31%)
-- prefered roast is Medium, except in Ireland, which prefers Dark (43%)
+- even bean preference, except for the UK, which prefers Excelsa (31.51%) more then other types
+- prefered roast is Medium, except in Ireland, which prefers Dark (43.14%)
 - not enough orders to analyze frequency or patterns in customers order tendencies
 
 ### Products
 For every business, sales and revenue are crucial. How are each of the bean and roast types performing in these metrics?
-In terms of sales, the bestseller is Excelsa (27%), and the worst-selling is Robusta (20%). The best-selling roast type is Light (39%), and the worst-selling is Dark (29%). Looking at these numbers, bean types are more evenly distributed in terms of sales than roast types.  
+In terms of sales, the bestseller is Excelsa (27.27%), and the worst-selling is Robusta (19.95%). The best-selling roast type is Light (38.45%), and the worst-selling is Dark (29.20%). Looking at these numbers, bean types are more evenly distributed in terms of sales than roast types.  
 
 <img src="img/sales_by_bean_type_overall.png" alt="Bean Type Sales" width="75%">
 <img src="img/sales_by_roast_type_overall.png" alt="Roast Type Sales" width="75%">
 
-We know how much sales each bean and roast type generates, but what about the revenue? Among bean types, the most revenue is generated by Liberica (35%) and the least by Robusta (12%). The roast that generates the most revenue is Light (38%), and the one that generates the least is Dark (30%). Looking at the numbers, it's clear that even though sales by bean type are almost evenly distributed, the revenue is not.  
+We know how much sales each bean and roast type generates, but what about the revenue? Among bean types, the most revenue is generated by Liberica (34.67%) and the least by Robusta (11.95%). The roast that generates the most revenue is Light (38.22%), and the one that generates the least is Dark (29.65%).  
 
 <img src="img/revenue_by_bean_type_overall.png" alt="Bean Type Revenue" width="75%">
 <img src="img/revenue_by_roast_type_overall.png" alt="Roast Type Revenue" width="75%">
 
 **Insights:**
-- best selling bean type is Excelsa (27%)
-- best selling roast type is Light (39%)
-- bean type generating the most revenue is Liberica (35%)
-- roast type generating the most revenue is Light (38%)
+- best selling bean type is Excelsa (27.27%)
+- best selling roast type is Light (38.45%)
+- bean type generating the most revenue is Liberica (34.67%)
+- roast type generating the most revenue is Light (38.22%)
 - bigger gaps among bean type revenue than sales distribution
 
 ### Orders History
@@ -438,6 +439,9 @@ Based on the insights gathered from the customers, sales and revenue analysis, h
       - Since we sell Light, Medium, Dark roast it would be worth a try to sell Medium-Dark roast for six months and than evaluate if this dicision helps with sales.
 
 These recommendations aim to capitalize on identified opportunities, address challenges, and enhance overall business performance for Sipster's Hideout. Implementing these strategies can potentially improve customer satisfaction, increase sales, and strengthen market presence in targeted regions.
+
+## Challenges
+During work on this project I came across few problems. First one was Excel itself. Because my computer is set to Slovak region all formulas accept `;` instead of `,` that is also not only difference also when writing a string in formula I cannot use `'text'` but `"text"` which is not a big issue but figuring it for the first time is confisung because you know the formula is correct. Another problem that I had was with names of the months and weeks. I wanted them to be in written not numeric format. I did some search to find out that there some codes representing each region and for english days and months is used `[$-409]`. 
 
 ## Acknowledgement
 Special thanks to **Mo Chen** for his dataset and lot of valuable lessosns that I learned from him over the last two years.  
