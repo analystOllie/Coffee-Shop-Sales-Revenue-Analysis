@@ -331,7 +331,14 @@ We know how much sales each bean and roast type generates, but what about the re
 - bigger gaps among bean type revenue than sales distribution
 
 ### Orders History
-Due to data limitations for the year 2022 (only the first eight months are available), the analysis is divided into two parts: 2019-2021 and 2022. This approach prevents the incomplete 2022 data from skewing sales and revenue patterns. 
+Due to data limitations for the year 2022 (only the first eight months are available), the analysis is divided into two parts: 2019-2021 and 2022. This approach prevents the incomplete 2022 data from skewing sales and revenue patterns. Because I needed to use actual names of the months and days in English I used following formulas to get them in desired formats:
+```excel
+# for getting day of the week
+=TEXT(B2;"[$-409]dddd")
+
+# for getting month
+=TEXT(B2;"[$-409]mmmm")
+```
 
 #### 2019-2021
 
