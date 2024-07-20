@@ -332,7 +332,7 @@ We know how much sales each bean and roast type generates, but what about the re
 - bigger gaps among bean type revenue than sales distribution
 
 ### Orders History
-Due to data limitations for the year 2022 (only the first eight months are available), the analysis is divided into two parts: 2019-2021 and 2022. This approach prevents the incomplete 2022 data from skewing sales and revenue patterns. Because I needed to use actual names of the months and days in English I used following formulas to get them in desired formats:
+Due to data limitations for the year 2022 (only the first eight months are available), the analysis is divided into two parts: 2019-2021 and 2022. This approach prevents the incomplete 2022 data from skewing sales and revenue patterns. Because I needed to use actual names of the months and days in English I needed to add two helper columns into `orders` sheet with these formulas:
 ```excel
 # for getting day of the week
 =TEXT(B2;"[$-409]dddd")
@@ -441,7 +441,7 @@ Based on the insights gathered from the customers, sales and revenue analysis, h
 These recommendations aim to capitalize on identified opportunities, address challenges, and enhance overall business performance for Sipster's Hideout. Implementing these strategies can potentially improve customer satisfaction, increase sales, and strengthen market presence in targeted regions.
 
 ## Challenges
-During work on this project I came across few problems. First one was Excel itself. Because my computer is set to Slovak region all formulas accept `;` instead of `,` that is also not only difference also when writing a string in formula I cannot use `'text'` but `"text"` which is not a big issue but figuring it for the first time is confisung because you know the formula is correct. Another problem that I had was with names of the months and weeks. I wanted them to be in written not numeric format. I did some search to find out that there some codes representing each region and for english days and months is used `[$-409]`. 
+During work on this project I came across few problems. First one was Excel itself. Because my computer is set to Slovak region all formulas accept `;` instead of `,` that is also not only difference also when writing a string in formula I cannot use `'text'` but `"text"` which is not a big issue but figuring it for the first time is confisung because you know the formula is correct. Another problem that I had was with names of the months and weeks. I wanted them to be in written not numeric format. I did some search to find out that there some codes representing each region and for english days and months is used `[$-409]`. Because of this issue I created calculated fields for months and days so I could use them in my charts.
 
 ## Acknowledgement
 Special thanks to **Mo Chen** for his dataset and lot of valuable lessosns that I learned from him over the last two years.  
