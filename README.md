@@ -243,6 +243,11 @@ After all these steps sheet looked like this:
 
 As last step of cleaning I checked for duplictae records in dataset. Thankfully no duplictae values were found.
 
+While I've been creating charts I realized I was missing data for `Price Per 100g` which is crucial for calculating **sales margin %**. So I added this column at the end with this formula:
+```excel
+=XLOOKUP(D2;products!$A$2:$A$49;products!$F$2:$F$49;;0)
+```
+
 ## Analysis
 
 ### Customers
