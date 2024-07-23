@@ -21,7 +21,7 @@ This project involves the analysis of sales, revenue and customer data for a mad
 - 💡 [Recommendations](#recommendations)
 - 🚨 [Challenges](#challenges)
 - 🙏 [Acknowledgement](#acknowledgement)
-- 🌐 [Used Sources](#used-sources)
+- 🌐 [Sources Used](#sources-used)
 
 ## Goals of Analysis
 The goals of this analysis are to address the specific requirements outlined by the stakeholder:
@@ -112,7 +112,7 @@ This dataset also had in `orders` sheet some empty columns, which I removed righ
 
 ## Data Cleaning And Preparation
 ### Customers Sheet
-Firstly I needed to prepare sheets to desired form. I started with adding **Name** and **Surename** columns into `customers` sheet. This was done because I like names being available if I need to search for specific names or families.  I addded values to the Name column using: 
+Firstly I needed to prepare sheets to desired form. I started with adding **Name** and **Surname** columns into `customers` sheet. This was done because I like names being available if I need to search for specific names or families.  I addded values to the Name column using: 
 ```excel
 =TEXTBEFORE(B2; " ")
 ```
@@ -125,7 +125,7 @@ This works similarly to `TEXTBEFORE()` but returns everything after the first sp
 I also renamed and rearranegd columns to make it more readable. Here are the changes:
 - **Customer Name** -> **Full Name**
 - **Address Line** -> **Address**
-- moved Name and Surename columns **after** Full Name column
+- moved Name and Surname columns **after** Full Name column
 
 The **Email** and **Phone Number** columns had some empty records because some customers hadn't provided this data. I decided to assign these empty cells the value `not provided` instead of leaving them null. I created two new columns by applying this logic. For **Email**, I used this formula: 
 ```excel
@@ -171,7 +171,7 @@ For populating the Customer Name column, I used this function:
 ```excel
 =VLOOKUP(C2;customers!$A$2:$B$1001;2;)
 ```
-This formula is mapping cell C2 to coresponding value in sheets `customers` range A2:B1001 and returns value from second row of range.
+This formula is mapping cell C2 to corresponding value in sheets `customers` range A2:B1001 and returns value from second row of range.
 
 #### Address
 To have the full address in one column, I used this formula:
@@ -188,14 +188,14 @@ For the Country column, I used the newly introduced (supported in Office 365, Ex
 =XLOOKUP(C2;customers!$A$2:$A$1001;customers!$I$2:$I$1001;;0;)
 ```
 
-This formula is mapping cell C2 to coresponding value in sheets `customers` range I2:I1001 and returns value from this row.
+This formula is mapping cell C2 to corresponding value in sheets `customers` range I2:I1001 and returns value from this row.
 #### Email
 The Email column was populated with this function:
 ```excel
 =VLOOKUP(C2;customers!$A$1:$E$1001;5;)
 ```
 
-This formula is mapping cell C2 to coresponding value in sheets `customers` range A2:E1001 and returns value from fifth row.
+This formula is mapping cell C2 to corresponding value in sheets `customers` range A2:E1001 and returns value from fifth row.
 
 #### Bean Type, Roast Type, Size and Unit Price**
 These columns were populated using the following formula:
@@ -219,7 +219,7 @@ This column was populated with this formula:
 =XLOOKUP(C2;customers!$A$2:$A$1001;customers!$K$2:$K$1001;;0)
 ```
 
-This formula is mapping cell C2 to coresponding value in sheets `customers` range K2:K1001 and returns value from this row.
+This formula is mapping cell C2 to corresponding value in sheets `customers` range K2:K1001 and returns value from this row.
 
 #### Weight
 I populated this colum via this formula:
@@ -235,7 +235,7 @@ The last column, was populated with data based on this formula:
 =E2*VLOOKUP(D2;products!$A$2:$G$49;7;)
 ```
 
-This formula multiplies value of cell E2 with mapped cell D2 to coresponding value in sheets `products` range A2:G49 and returns value from seventh row.
+This formula multiplies value of cell E2 with mapped cell D2 to corresponding value in sheets `products` range A2:G49 and returns value from seventh row.
 
 After all these steps sheet looked like this:
 
@@ -418,13 +418,28 @@ Based on the insights gathered from the customers, sales and revenue analysis, h
 These recommendations aim to capitalize on identified opportunities, address challenges, and enhance overall business performance for Sipster's Hideout. Implementing these strategies can potentially improve customer satisfaction, increase sales, and strengthen market presence in targeted regions.
 
 ## Challenges
-During work on this project I came across few problems. First one was Excel itself. Because my computer is set to Slovak region all formulas accept `;` instead of `,` that is also not only difference also when writing a string in formula I cannot use `'text'` but `"text"` which is not a big issue but figuring it for the first time is confisung because you know the formula is correct. Another problem that I had was with names of the months and weeks. I wanted them to be in written not numeric format. I did some search to find out that there some codes representing each region and for english days and months is used `[$-409]`. Because of this issue I created calculated fields for months and days so I could use them in my charts.
+During the work on this project, I encountered several challenges:
+
+**1. Excel Formula Differences:**
+- My computer's region settings (Slovakia) caused Excel formulas to use `;` instead of `,` as a separator. This created confusion and required adjustments to standard formulas and strings, as I had to use `"text"` instead of `'text'`.
+
+**2. Data Completeness:**
+- The dataset was incomplete, specifically for the year 2022, with only the first eight months available. This limited the scope of the analysis and affected the accuracy of seasonal and trend analyses.
+
+**3. Lack of Detailed Customer Data:**
+- The dataset lacked detailed demographic information such as age and gender, which restricted the depth of customer profiling and segmentation.
+
+**4. Multi-item Order Analysis:**
+- There were very few multi-item orders in the dataset, making it not possible to identify common combinations and upselling opportunities.
+
+***5. Months and Dates**
+- Beacuse of the region problem I dealth with another issue. Every month or day of the week was displayed in my regions language instead of english. I had to use `[$-409]` within formulas to force Excel to display them in english.
 
 ## Acknowledgement
 Special thanks to **Mo Chen** for his dataset and lot of valuable lessosns that I learned from him over the last two years.  
 And of course thank you for investing your time in exploring this analysis with me. I hope you found this analysis and the insights as captivating as I did and that this project ignites your curiosity to delve deeper into this dataset or one of your choosing.
 
-## Used Sources
+## Sources Used
 https://chatgpt.com/  
 https://github.com/mochen862/excel-project-coffee-sales/blob/main/coffeeOrdersData.xlsx  
 https://leonardo.ai/  
