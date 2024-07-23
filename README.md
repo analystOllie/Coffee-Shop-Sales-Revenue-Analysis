@@ -376,6 +376,7 @@ Due to data limitations for the year 2022 (only the first eight months are avail
 -  least orders in 2019-2021 were in August and on Mondays and in 2022, the least orders were in August and on Saturdays
 - best quarter for sales and revenue in 2019-2021 was Q4 and in 2022, the best quarter was Q1
 - worst quarter for sales and revenue in 2019-2021 was Q3 and in 2022, the worst quarter was Q3
+- sales margins are always holding between **8%** and **12%**
 
 ## Recommendations
 
