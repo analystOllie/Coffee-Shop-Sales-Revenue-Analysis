@@ -355,15 +355,14 @@ Due to data limitations for the year 2022 (only the first eight months are avail
 ![2019-21 Sales & Revenue Day](img/sales_revenue_day_19_21.png)
 ![2019-21 Sales & Revenue Month](img/sales_revenue_month_19_21.png)
 ![2019-21 Sales & Revenue Quarter](img/sales_revenue_quarter_19_21.png)
-![2019-21 Orders Days](img/orders_day_19_21.png)![2019-21 Orders Months](img/orders_month_19_21.png)
+![2019-21 Orders Days & Months](img/orders_19_21.png)
 
 #### 2022
 
 ![2022 Sales & Revenue Day](img/sales_revenue_day_22.png)
 ![2022 Sales & Revenue Month](img/sales_revenue_month_22.png)
 ![2022 Sales & Revenue Quarter](img/sales_revenue_quarter_22.png)
-![2022 Orders Days](img/orders_day_22.png)
-![2022 Orders Months](img/orders_month_22.png)
+![2022 Orders Days & Months](img/orders_22.png)
 
 
 **Insights:**
