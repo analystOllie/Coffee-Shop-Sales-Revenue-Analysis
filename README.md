@@ -248,6 +248,8 @@ While I've been creating charts I realized I was missing data for `Price Per 100
 =XLOOKUP(D2;products!$A$2:$A$49;products!$F$2:$F$49;;0)
 ```
 
+If you want to look at my Excel file for this project you can find it in this [repository](data/coffeeData.xlsx)
+
 ## Analysis
 
 ### Customers
